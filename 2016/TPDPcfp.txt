@@ -1,0 +1,86 @@
+CALL FOR PAPERS
+TPDP 2016
+Second workshop on the Theory and Practice of Differential Privacy
+23th June 2016, New York, USA
+Affiliated to ICML'16
+http://tpdp16.cse.buffalo.edu
+
+Differential privacy is a promising approach to the privacy-preserving
+release of data: it offers a strong guaranteed bound on the increase
+in harm that a user incurs as a result of participating in a
+differentially private data analysis. 
+
+Researchers in differential privacy come from several area of computer
+science as machine learning, algorithms, programming languages, 
+security, databases, as well as from several areas of statistics and data
+analysis. The workshop is intended to be an occasion for researchers
+from these different research areas to discuss the recent developments
+in the theory and practice of differential privacy.
+
+##Invited Speakers##
+
+Kamalika Chaudhuri - University of California, San Diego,
+
+Kobbi Nissim - Ben-Gurion University & Harvard University
+
+Vitaly Shmatikov - Cornell Tech
+
+Yu-Xiang Wang - Carnegie Mellon University
+
+
+##Submissions##
+
+The overall goal of TPDP is to stimulate the discussion on the
+relevance of differentially private data analyses in practice. For
+this reason, we seek contributions from different research areas of
+computer science and statistics.
+
+Authors are invited to submit a short abstract (2-4 pages maximum) of
+their work by May 1, 2016. Abstracts must be written in English
+and be submitted as a single PDF file at the EasyChair page for TPDP:
+https://easychair.org/conferences/?conf=tpdp2016
+
+Submissions will undergo a lightweight review process and will be
+judged on originality, relevance, interest and clarity. Submission
+should describe novel works or works that have already appeared
+elsewhere but that can stimulate the discussion between different
+communities at the workshop. Accepted abstracts will be presented at
+the workshop either in technical sessions or as posters.
+
+The workshop will not have formal proceedings, and presentation at the
+workshop is not intended to preclude later publication at another venue.
+
+##Important Dates##
+
+May 1, 2016 - Abstract Submission
+May 10, 2016 - Notification
+June 23, 2016 - Workshop
+
+
+##Topics##
+
+Specific topics of interest for the workshop include (but are not limited to):
+
+theory of differential privacy,
+privacy preserving machine learning,
+differential privacy and statistics,
+differential privacy and security,
+differential privacy and data analysis,
+trade-offs between privacy protection and analytic utility,
+differential privacy and surveys,
+programming languages for differential privacy,
+relaxations of the differential privacy definition,
+differential privacy vs other privacy notions and methods,
+experimental studies using differential privacy,
+differential privacy implementations,
+differential privacy and policy making,
+applications of differential privacy.
+
+##Organizing and Program Committee##
+
+Gilles Barthe - IMDEA Software
+Christos Dimitrakakis - University of Lille
+Marco Gaboardi - University at Buffalo, SUNY
+Andreas Haeberlen - University of Pennsylvania
+Aaron Roth - University of Pennsylvania
+Aleksandra B. Slavkovic - Penn State University
