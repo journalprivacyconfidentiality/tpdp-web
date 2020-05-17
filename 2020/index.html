@@ -1,0 +1,384 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TPDP 2020 – Theory and Practice of Differential Privacy</title>
+
+  <link href="style.css" type="text/css" rel='stylesheet'>
+  <link rel='stylesheet' media='screen and (max-width: 750px)'
+  href='narrow.css'>
+</head>
+
+<body>
+
+<div id="header">
+  <h1>TPDP 2020 - Theory and Practice of Differential Privacy</h1>
+  <h2>Orlando, USA - 13 November 2020 - part of <a
+  href="https://www.sigsac.org/ccs/CCS2020/">CCS 2020</a>
+  <br>
+  <!-- <h3>Location: Beanfield Centre, 203AB</h3> -->
+  </h2>
+</div>
+
+<!-- <div class="program box"> <h2>Program</h2>
+<table  style="padding:15px; column-gap:1000px">
+  <tr>
+    <td>
+      7:30-9:00
+    </td>
+    <td></td>
+    <td>
+    Breakfast
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      9:00-9:05
+    </td>
+    <td></td>
+    <td>
+    Welcome
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      9:05-9:50
+    </td>
+    <td></td>
+    <td>
+      <u>Encode, Shuffle, Analyze Revisited: Strong Privacy despite a High-Epsilon</u> <br>
+      <a href="https://www.soe.ucsc.edu/people/aguhatha">Abhradeep Guha Thakurta</a> (Invited Speaker)
+      <br>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      9:50-10:05
+    </td>
+    <td></td>
+    <td>
+    <a href="https://arxiv.org/abs/1909.07918">DPella: A Programming Framework for Differential Privacy with Accuracy</a>
+    <br>
+    by Elisabet Lobo Vesga, Alejandro Russo, Marco Gaboardi and Gilles Barthe.
+      <br>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      10:05-10:45
+    </td>
+    <td></td>
+    <td>
+      Coffee Break
+    </td>
+  </tr>
+
+    <tr>
+    <td>
+      10:45-12:00
+    </td>
+    <td></td>
+    <td>
+    Private Convex Optimization with Optimal Rates<br> by Abhradeep Thakurta, Raef Bassily, Kunal Talwar and Vitaly Feldman.
+    <br>
+    <br>
+    Lessons learned from the NIST DP Synthetic Data Competition<br> by Ryan McKenna and Gerome Miklau.
+    <br>
+    <br>
+    Full convergence of the iterative Bayesian update and applications to local differential privacy<br> by Ehab Elsalamouny and Catuscia Palamidessi.
+    <br>
+    <br>
+    Differentially Private Real Summation with Single- and Multi-Message Shuffling (this talk is based on <a href="https://arxiv.org/abs/1903.02837">two</a> <a href="https://arxiv.org/abs/1906.09116">papers</a>)<br> by Adria Gascon, Borja Balle, Kobbi Nissim and James Bell.
+    <br>
+    <br>
+    Differentially Private Release of Synthetic Graphs<br> by Marek Elias, Michael Kapralov, Janardhan Kulkarni and Yin Tat Lee.
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      12:00-2:00
+    </td>
+    <td></td>
+    <td>
+      Lunch Break
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      2:00-3:00
+    </td>
+    <td></td>
+    <td>
+      <u>Private hypothesis testing via robustness</u> <br>
+      <a href="https://audramarymcmillan.wixsite.com/mysite">Audra McMillan</a> (Invited Speaker)
+      <br>
+      <br>
+      <a href="https://arxiv.org/abs/1905.13229">Private Hypothesis Selection</a><br> by Mark Bun, Gautam Kamath, Thomas Steinke and Zhiwei Steven Wu.
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      3:00-3:45
+    </td>
+    <td></td>
+    <td>
+      Coffee Break
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      3:45-4:45
+    </td>
+    <td></td>
+    <td>
+    <u>The search for anonymous data: attacks against
+privacy-preserving methods and systems</u> <br>
+    <a href="http://www.demontjoye.com/">Yves-Alexandre de Montjoye</a> (Invited Speaker)
+      <br>
+      <br>
+      Generalizable Deep Learning with Differential Privacy; Using Gradient Compression and De-noising<br> by Milad Nasr, Reza Shokri and Amir Houmansadr.
+    </td>
+  </tr>
+    <tr>
+    <td>
+      4:45-6:00
+    </td>
+    <td></td>
+    <td>
+      Poster Session
+    </td>
+  </tr>
+
+</table>
+</div> -->
+
+
+<!-- <div class="content box"> <h2>Contributed talks</h2>
+
+<ul>
+<li>DPella: A Programming Framework for Differential Privacy with Accuracy, by Elisabet Lobo Vesga, Alejandro Russo, Marco Gaboardi and Gilles Barthe.</li>
+<li>Lessons learned from the NIST DP Synthetic Data Competition, by Ryan McKenna and Gerome Miklau.</li>
+<li>Differentially Private Release of Synthetic Graphs, by Marek Elias, Michael Kapralov, Janardhan Kulkarni and Yin Tat Lee.</li>
+<li>Generalizable Deep Learning with Differential Privacy; Using Gradient Compression and De-noising, by Milad Nasr, Reza Shokri and Amir Houmansadr.</li>
+<li>Differentially Private Real Summation with Single- and Multi-Message Shuffling (this talk is based on <a href="https://arxiv.org/abs/1903.02837">two</a> <a href="https://arxiv.org/abs/1906.09116">papers</a>), by Adria Gascon, Borja Balle, Kobbi Nissim and James Bell.</li>
+<li>Full convergence of the iterative Bayesian update and applications to local differential privacy, by Ehab Elsalamouny and Catuscia Palamidessi.</li>
+<li><a href="https://arxiv.org/abs/1905.13229">Private Hypothesis Selection</a>, by Mark Bun, Gautam Kamath, Thomas Steinke and Zhiwei Steven Wu.</li>
+<li>Private Convex Optimization with Optimal Rates, by Abhradeep Thakurta, Raef Bassily, Kunal Talwar and Vitaly Feldman.</li>
+</ul>
+
+</div> -->
+
+<!-- <div class="content box"> <h2>Posters</h2>
+
+<ul>
+<li><a href="https://arxiv.org/abs/1906.03049">Computing Exact Guarantees for Differential Privacy</a>, by Antti Koskela, Antti Honkela and Joonas Jälkö.</li>
+<li><a href="https://arxiv.org/abs/1908.10268">Answering Summation Queries for Numerical Attributes under Differential Privacy</a>, by Yikai Wu, David Pujol, Ios Kotsogiannis and Ashwin Machanavajjhala.</li>
+<li><a href="https://arxiv.org/abs/1905.12264">Privacy Amplification by Mixing and Diffusion Mechanisms</a>, by Borja Balle, Gilles Barthe, Marco Gaboardi and Joseph Geumlek.</li>
+<li><a href="https://arxiv.org/abs/1905.09982">Hypothesis Testing Interpretations and R\'enyi Differential Privacy</a>, by Borja Balle, Gilles Barthe, Marco Gaboardi, Justin Hsu and Tetsuya Sato.</li>
+<li><a href="https://arxiv.org/abs/1907.02444">Diffprivlib: The IBM Differential Privacy Library</a>, by Naoise Holohan, Stefano Braghin, Pol Mac Aonghusa and Killian Levacher.</li>
+<li><a href="http://arxiv.org/abs/1909.09630">Manipulation Attacks in Local Differential Privacy</a>, by Albert Cheu, Adam Smith and Jonathan Ullman.</li>
+<li><a href="https://arxiv.org/abs/1906.09613">The Cost of a Reductions Approach to Private Fair Optimization</a>, by Daniel Alabi.</li>
+<li>Differential Privacy After the Fact: The Case of Congressional Reapportionment, by Zhun Deng, Cynthia Dwork and Adam Smith.</li>
+<li><a href="https://arxiv.org/abs/1905.11947">Private Identity Testing for High-Dimensional Distributions</a>, by Clément Canonne, Gautam Kamath, Audra McMillan, Jonathan Ullman and Lydia Zakynthinou.</li>
+<li>Suboptimal Provision of Privacy and Statistical Accuracy When They are Public Goods, by John Abowd, Ian Schmutte, William Sexton and Lars Vilhuber.</li>
+<li><a href="https://arxiv.org/abs/1910.03861">Private Protocols for $U$-statistics in the Local Model and Beyond</a>, by Adria Gascon, James Bell, Aurelien Bellet and Tejas Tejas Kulkarni.</li>
+<li>Instance-Optimal Non-Interactive Local Query Release, by Alexander Edmonds, Aleksandar Nikolov and Jonathan Ullman.</li>
+<li><a href="https://arxiv.org/abs/1906.01337">The Flavors of Differential Privacy</a>, by Balázs Pejó and Damien Desfontaines.</li>
+<li><a href="https://arxiv.org/abs/1905.10477">Efficiently Estimating Erdos-Renyi Graphs with Node Differential Privacy</a>, by Adam Sealfon and Jonathan Ullman.</li>
+<li><a href="https://webpages.uncc.edu/lfan4/pdf/TPDP2020.pdf">Differential Privacy for Image Publication</a>, by Liyue Fan.</li>
+<li><a href="https://arxiv.org/abs/1902.08534">Federated Heavy Hitters with Differential Privacy</a>, by Wennan Zhu, Peter Kairouz and Brendan McMahan.</li>
+<li>A practical method for workload-aware frequency estimation under local differential privacy, by Raj Kumar Maity, Ryan McKenna, Arya Mazumdar and Gerome Miklau.</li>
+<li><a href="https://arxiv.org/abs/1905.04273">Practical Differentially Private Top-k Selection with Pay-what-you-get Composition</a>, by David Durfee and Ryan Rogers.</li>
+<li><a href="https://yonadavshavit.com/assets/files/lipschitz-nns-for-dp.pdf">Exploring the use of Lipschitz Neural Networks for Automating the Design of Differentially Private Mechanisms</a>, by Yonadav Shavit and Boriana Gjura.</li>
+<li><a href="https://arxiv.org/abs/1911.00038">Context-Aware Local Differential Privacy</a>, by Jayadev Acharya, Keith Bonawitz, Peter Kairouz, Daniel Ramage and Ziteng Sun.</li>
+<li><a href="https://arxiv.org/abs/1901.10275">Differentially Private Markov Chain Monte Carlo</a>, by Mikko Heikkilä, Joonas Jälkö, Onur Dikmen and Antti Honkela.</li>
+<li><a href="https://www.ics.uci.edu/~sghayyur/papers/MiM_TPDP_2020">Towards Accuracy Aware Minimally Invasive Monitoring (MiM)</a>, by Sameera Ghayyur, Dhrubajyoti Ghosh, Xi He and Sharad Mehrotra.</li>
+<li>A Bayesian Latent Class Approach to Private Contingency Table Release, by Michelle Nixon, Andres Barrientos, Jerome Reiter and Aleksandra Slavkovic.</li>
+<li>A Practical Method for Differentially Private Confidence Intervals for Linear Regression, by Shufan Wang and Daniel Sheldon.</li>
+<li><a href="https://arxiv.org/abs/1810.09152">PriSTE: From Location Privacy to Spatiotemporal Event Privacy</a>, by Yang Cao, Yonghui Xiao, Li Xiong and Masatoshi Yoshikawa.</li>
+<li><a href="https://arxiv.org/abs/1905.02383">Gaussian Differential Privacy</a>, by Jinshuo Dong, Aaron Roth and Weijie J. Su.</li>
+<li><a href="https://arxiv.org/abs/1906.08320">Scalable and Differentially Private Distributed Aggregation in the Shuffled Model</a>, by Badih Ghazi, Rasmus Pagh and Ameya Velingker.</li>
+<li><a href="https://arxiv.org/abs/1909.01783">Differentially Private Objective Perturbation: Beyond Smoothness and Convexity</a>, by Giuseppe Vietri, Steven Wu, Aaron Roth and Seth Neel.</li>
+<li>Privately Detecting Changes in Unknown Distributions, by Rachel Cummings, Sara Krehbiel, Yuliia Lut and Wanrong Zhang.</li>
+<li><a href="http://arxiv.org/abs/1911.03272">The Complexity of Verifying Circuits as Differentially Private</a>, by David Purser, Marco Gaboardi and Kobbi Nissim.</li>
+<li>Graphical-model based estimation and inference for differential privacy, by Ryan McKenna, Daniel Sheldon and Gerome Miklau.</li>
+<li><a href="https://eprint.iacr.org/2018/003.pdf">How to (not) share a password: Privacy preserving protocols for finding heavy hitters with adversarial behavior</a>, by Moni Naor, Benny Pinkas and Eyal Ronen.</li>
+<li>Differentially Private Simultaneous Mechanisms: A New Model for Private Cross-Database Analysis, by Rohit Agrawal, Christina Ilvento and Preetum Nakkiran.</li>
+</ul>
+
+</div> -->
+
+<div class="content box"> <h2>Context</h2>
+
+<p>
+  Differential privacy is a promising approach to privacy-preserving data analysis.  Differential privacy provides strong worst-case guarantees about the harm that a user could suffer from participating in a differentially private data analysis, but is also flexible enough to allow for a wide variety of data analyses to be performed with a high degree of utility.  Having already been the subject of a decade of intense scientific study, it has also now been deployed at government agencies such as the U.S. Census Bureau and companies including Apple, Google, Facebook, and Microsoft.
+</p>
+<p>
+  Researchers in differential privacy span many distinct research communities, including algorithms, computer security, cryptography, databases, data mining, machine learning, statistics, programming languages, social sciences, and law.  This workshop will bring researchers from these communities together to discuss recent developments in both the theory and practice of differential privacy.
+</p>
+
+<p>
+Specific topics of interest for the workshop include (but are not limited to):
+</p>
+<ul>
+<li>theory of differential privacy,</li>
+<li>differential privacy and security,</li>
+<li>privacy preserving machine learning,</li>
+<li>differential privacy and statistics,</li>
+<li>differential privacy and data analysis,</li>
+<li>trade-offs between privacy protection and analytic utility,</li>
+<li>differential privacy and surveys,</li>
+<li>programming languages for differential privacy,</li>
+<li>relaxations of the differential privacy definition,</li>
+<li>differential privacy vs other privacy notions and methods,</li>
+<li>experimental studies using differential privacy,</li>
+<li>differential privacy implementations,</li>
+<li>differential privacy and policy making,</li>
+<li>applications of differential privacy.</li>
+</ul>
+
+</div>
+
+<div class="content box">
+<h2 id="submission">Submission</h2>
+
+<p>
+  The goal of TPDP is to stimulate the discussion on the relevance of differentially private data analyses in practice. For this reason, we seek contributions from different research areas of computer science and statistics.
+</p>
+
+<p>
+  Authors are invited to <a href="https://easychair.org/my/conference?conf=tpdp2020">submit a short abstract</a> (4 pages maximum) of their work.
+</p>
+
+<p>
+  Submissions will undergo a lightweight review process and will be judged on originality, relevance, interest and clarity. Submission should describe novel work or work that has already appeared elsewhere but that can stimulate the discussion between different communities at the workshop. Accepted abstracts will be presented at the workshop either as a talk or a poster.
+</p>
+
+<p>
+  The workshop will not have formal proceedings and is not intended to preclude later publication at another venue.
+</p>
+
+<p>
+  Selected papers from the workshop will be invited to submit a full version of their work for publication in a <a href="https://journalprivacyconfidentiality.org/index.php/jpc/tpdp">special issue</a> of the <a href="https://journalprivacyconfidentiality.org/index.php/jpc">Journal of Privacy and Confidentiality</a>.
+</p>
+
+<p>
+  Call for Papers: <a href="TPDP 2020 CfP.pdf">pdf</a>
+</p>
+</div>
+
+
+<div class="side box">
+<h2>Invited Speakers</h2>
+<ul>
+  <li >
+  TBD!
+  </li>
+  <!-- <li >
+  <a href="http://www.demontjoye.com/">Yves-Alexandre de Montjoye</a> <br>
+  Imperial College London
+  </li>
+  <li >
+  <a href="https://audramarymcmillan.wixsite.com/mysite">Audra McMillan</a> <br>
+  Boston University
+  </li>
+  <li >
+  <a href="https://www.soe.ucsc.edu/people/aguhatha">Abhradeep Guha Thakurta</a> <br>
+  University of California Santa Cruz and Google
+  </li> -->
+</ul>
+</div>
+
+
+<div class="side box">
+  <h2>Important Dates</h2>
+  <dl>
+    <dt>Abstract Submission</dt>
+    <dd>
+      <dd>June 21 (anywhere on earth)</dd>
+    </dd>
+    <dt>Notification</dt>
+    <dd>
+      <dd>August 8</dd>
+    </dd>
+    <dt>Workshop</dt>
+    <dd>November 13</dd>
+  </dl>
+</div>
+
+
+
+
+<div class="side box">
+  <h2>Organizing and Program Committee</h2>
+  <ul>
+    <li class="pc">
+      <a href="https://www.isye.gatech.edu/users/rachel-cummings">Rachel Cummings</a> (co-chair)<br>
+      Georgia Institute of Technology
+    </li>
+    <li class="pc">
+      <a href="http://cs.colgate.edu/~mhay">Michael Hay</a> (co-chair)<br>
+      Colgate University
+    </li>
+    <li class="pc">
+      <a href="http://alabidan.me/">Daniel Alabi</a>  <br>
+      Harvard University
+    </li>
+    <li class="pc">
+      <a href="https://borjaballe.github.io/">Borja Balle</a><br>
+      Amazon
+    </li>
+    <li class="pc">
+      <a href="https://cs-people.bu.edu/mbun/">Mark Bun</a><br>
+      Boston University
+    </li>
+    <li class="pc">
+      <a href="https://www.linkedin.com/in/ulfar/">Úlfar Erlingsson</a><br>
+      Apple
+    </li>
+    <li class="pc">
+      <a href="https://audramarymcmillan.wixsite.com/mysite">Audra McMillan</a><br>
+      Northeastern University/Boston University
+    </li>
+    <li class="pc">
+      <a href="http://www.uvm.edu/~jnear/">Joseph Near</a><br>
+      University of Vermont
+    </li>
+    <li class="pc">
+      <a href="https://www.math.upenn.edu/~ryrogers/">Ryan Rogers</a><br>
+      LinkedIn
+    </li>
+    <li class="pc">
+      <a href="https://www.uri.co.il/">Uri Stemmer</a><br>
+      Ben-Gurion University
+    </li>
+    <li class="pc">
+      <a href="http://www.ccs.neu.edu/home/jullman/">Jon Ullman</a><br>
+      Northeastern University
+    </li>
+  </ul>
+</div>
+<div class="side box">
+  <h2>Submission website</h2>
+  <br>
+  <a href="https://easychair.org/conferences/?conf=tpdp2020"><b>Easychair TPDP 2020</b></a>
+  <br>
+  <br>
+</div>
+
+
+<div id="bg_descr">
+</div>
+
+</body></html>
