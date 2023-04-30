@@ -1,0 +1,178 @@
+body {
+  background: #e5e5e5;
+  background-repeat:no-repeat;
+  background-position:top;
+
+  font-family: helvetica, arial, sans-serif;
+  font-size: medium;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  padding-left: .5em;
+  max-width: 60em;
+  width: auto;
+}
+
+td {
+  vertical-align: top;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+a {
+  color:rgb(44, 104, 163);
+}
+
+h1 {
+color: rgb(44, 104, 163);
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+h2 {
+color: rgb(44, 104, 163);
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+h3 {
+color: rgb(44, 104, 163);
+  padding-left: 1em;
+  font-weight: bold;
+}
+
+h3.title {
+  padding-left: 0em;
+}
+
+h3.abstracts {
+  margin-bottom: 0em;
+}
+
+
+h4 {
+color: rgb(44, 104, 163);
+  padding-left: 1em;
+  font-size: large;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+
+.box {
+  background: #FFFFFF;
+  opacity: 0.9;
+  border: solid lightgray 1px;
+  margin-right: .5em;
+  margin-bottom: .5em;
+  padding-top: 0ex;
+  padding-left: .5em;
+  padding-right: 1ex;
+  border-radius: 5px;
+}
+
+div.box p {
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+ul.prog {
+  padding-left: 2em;
+  list-style-type: none;
+  margin-top: 0.5em;
+}
+
+ul.prog li {
+  padding-left: 0em;
+  margin-bottom: 0.5em;
+}
+
+ul.nobullets {
+  padding-left: .5em;
+  list-style: none;
+}
+
+div.box a {
+  color: rgb(44, 104, 163);
+}
+
+div.box h2 {
+  color: rgb(44, 104, 163);
+  padding-top: 1em;
+  padding-bottom: 3px;
+  padding-left: .3ex;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-bottom: solid lightgray 1px;
+}
+div.box h2:nth-of-type(1) {
+  padding-top: 1ex;
+}
+
+#header {
+  margin-bottom: 2em;
+}
+
+div.side {
+  margin-left: 40em;
+  max-width: 19em;
+  min-width: 15em;
+  width:auto;
+}
+
+div.side h2 {
+  font-size: medium;
+}
+
+div.side ul {
+  padding-left: 0.3em;
+  list-style: none;
+}
+
+div.side dt {
+  padding-left: .3em;
+  padding-top: 3px;
+  font-weight: normal;
+}
+div.side dt:nth-of-type(1) {
+  padding-top: 0px;
+}
+div.side dd {
+  margin-left: 1em;
+  padding-left: 0px;
+}
+
+li.pc {
+  padding-top: 1px;
+}
+
+div.content {
+  float:left;
+  font-size: 1em;
+  width: 38em;
+}
+
+
+#bg_descr {
+  font-size: small;
+  float: left;
+  color: white;
+  text-align:center;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#bg_descr a {
+  color: white;
+}
+
+.sponsorlogo {
+  margin: 10px;
+  vertical-align: middle;
+}
