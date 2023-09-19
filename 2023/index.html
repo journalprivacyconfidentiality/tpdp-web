@@ -19,6 +19,13 @@
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="512">
 <meta property="og:image:height" content="512">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})
+</script>
 </head>
 
 <style>
@@ -262,9 +269,14 @@ Lunch Break
 </td>
 <td></td>
 <td>
-Keynote #3
+Keynote: Concurrent Composition of Interactive Differential Privacy
 <br>
 <a href="https://wanrongz.github.io">Wanrong Zhang</a> (Invited Speaker)
+<p style="font-size: smaller;">We initiate a study of the composition properties of interactive differentially private mechanisms. An interactive differentially private mechanism is a possibly stateful algorithm that allows an analyst to adaptively ask queries about a sensitive dataset. We focus on *concurrent* composition, where an adversary can arbitrarily interleave its queries to several interactive differentially private mechanisms, which may be feasible when differentially private query systems are deployed in practice. We prove that the main composition theorems for non-interactive differentially private mechanisms extend to the concurrent composition of interactive differentially private mechanisms. Our theorems cover the cases when differential privacy is measured using the hypothesis testing framework of f-DP, which captures standard ($\epsilon,\delta$)-DP as a special case, or using Renyi divergence of fixed order (Renyi DP). Our proof for the case of f-DP works by showing that every interactive f-DP mechanism can be simulated, on any pair of adjacent datasets, by an interactive post-processing of a non-interactive f-DP mechanism.   <br>
+ 
+We then extend these results to the concurrent composition of interactive mechanisms with adaptively chosen privacy-loss parameters. We prove that every valid privacy filter and odometer for noninteractive mechanisms extend to the concurrent composition of interactive mechanisms if privacy loss is measured using $(\epsilon, \delta)$-DP, $f$-DP, or R\'enyi DP of fixed order. Our results offer strong theoretical foundations for enabling full adaptivity in composing differentially private interactive mechanisms, showing that concurrency does not affect privacy guarantees. <br>
+ 
+This talk is based on joint work with Salil Vadhan, Tianhao Wang, Xin Lyu, Vicki Xu, Samuel Haney, Michael Shoemate, Grace Tian, and Andrew Vyrros.</p>
 </td>
 </tr>
 
