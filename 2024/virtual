@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TPDP 2024 – Theory and Practice of Differential Privacy</title>
+
+  <link href="style.css" type="text/css" rel='stylesheet'>
+  <link rel='stylesheet' media='screen and (max-width: 750px)'
+  href='narrow.css'>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:image" content="https://tpdp.journalprivacyconfidentiality.org/android-chrome-512x512.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})
+</script>
+</head>
+
+<style>
+  .image-with-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-with-text p {
+    margin-right: 10px;
+  }
+</style>
+
+<body>
+
+<div id="header">
+  <h1>TPDP 2024 - Theory and Practice of Differential Privacy</h1>
+  <h2>Boston - August 20-21, 2024 
+    <br>
+  </h2>
+</div>
+
+<div class="program box">
+  <h2>Workshop Information</h2>
+<p>
+TPDP 2024 will take place on August 20 and 21 at the <a href="https://seas.harvard.edu/about-us/visit-us/allston/science-engineering-complex">Harvard University Science and Engineering Complex (SEC)</a>. TPDP is co-located with the <a href="https://sites.harvard.edu/opendp/">2024 OpenDP Community Meeting</a>, happening on August 22 and 23. We hope you will attend both!
+</p>
+
+<a href="https://tpdp.journalprivacyconfidentiality.org/2024/">
+  <button type="button"> Click here to join TPDP 2024 on Zoom</button>
+</a>
+  
+<p>
+  <b>Registration:</b> Registration for TPDP 2024 is free. Please <a href="https://forms.gle/Q9S2sk1H6mMqCdmq5">click here</a> or use the link in the sidebar to register for the workshop, and don't forget to register for the <a href="https://sites.harvard.edu/opendp/">OpenDP Community Meeting</a> (also free) too!
+</p>
+
+</div>
+
+
+<div id="bg_descr">
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body></html>
