@@ -71,6 +71,8 @@ TPDP 2024 will take place on August 20 and 21 at the <a href="https://seas.harva
 <li><a href="https://sites.harvard.edu/opendp/events/2024-opendp-community-meeting/resources/">Click here</a> for an interior map of the SEC building</a></li>
 </ul>
 
+<h2><a href="https://www.youtube.com/playlist?list=PLsdxHQIBx6_ys20F9r98lTB5tjKeBl1Q9">Click here for the complete playlist of talk videos</a></h2>
+
 <table  style="padding:15px; column-gap:1000px">
 
 <p><b>Tuesday, August 20</b></p>
@@ -106,6 +108,7 @@ provides adversaries with two distinct opportunities to tamper with the data. We
 mitigate both types of tampering by applying them in real-world settings and exploring the associated
 challenges.</p>
 <p><a href="https://sites.google.com/wisc.edu/amrita-roy-chowdhury/">Amrita Roy Chowdhury's website</a></p>
+<p><a href="https://www.youtube.com/watch?v=FqRQ8KF0bqo&list=PLsdxHQIBx6_ys20F9r98lTB5tjKeBl1Q9&index=1&pp=iAQB">Video</a></p>
 </div>
 
 <br>
@@ -123,11 +126,13 @@ challenges.</p>
 <div class="abstract">
   <p>We demonstrate a substantial gap between the privacy guarantees of the Adaptive Batch Linear Queries (ABLQ) mechanism under different types of batch sampling: (i) Shuffling, and (ii) Poisson subsampling; the typical analysis of Differentially Private Stochastic Gradient Descent (DP-SGD) follows by interpreting it as a post-processing of ABLQ. While shuffling-based DP-SGD is more commonly used in practical implementations, it has not been amenable to easy privacy analysis, either analytically or even numerically. On the other hand, Poisson subsampling-based DP-SGD is challenging to scalably implement, but has a well-understood privacy analysis, with multiple open-source numerically tight privacy accountants available. This has led to a common practice of using shuffling-based DP-SGD in practice, but using the privacy analysis for the corresponding Poisson subsampling version. Our result shows that there can be a substantial gap between the privacy analysis when using the two types of batch sampling, and thus advises caution in reporting privacy parameters for DP-SGD.</p>
 <p><a href="https://arxiv.org/abs/2403.17673">Full paper</a></p>
+<p><a href="https://www.youtube.com/watch?v=FqRQ8KF0bqo&list=PLsdxHQIBx6_ys20F9r98lTB5tjKeBl1Q9&index=1&pp=iAQB">Video</a></p>
 </div>
 
 <button type="button" class="collapsible">Lower Bounds for Differential Privacy Under Continual Observation and its Implications<br><i>Edith Cohen, <b>Xin Lyu</b>, Jelani Nelson, Tamás Sarlós, Uri Stemmer</i></button>
 <div class="abstract">
   <p>We study differential privacy under continual observation and prove new lower bounds for private online counters. Specifically, we show that, over a stream of length T, any (eps, delta)-DP counter must incur an additive error of Omega(log T), even if the stream contains at most log(T) increments. For the offline version of the problem (i.e., releasing prefix sums of a given array), there is an upper bound for sparse stream under approximate DP with O(log^* T) additive error. Our result thus separates the online and offline versions of the problem. Based on the new proof, we derive several consequences for other online tasks, including a new lower bound for answering online threshold queries, and a lower bound for differentially-private online learning.</p>
+<p><a href="https://www.youtube.com/watch?v=dqQwim_CM_c&list=PLsdxHQIBx6_ys20F9r98lTB5tjKeBl1Q9&index=10&pp=iAQB">Video</a></p>
 </div>
 
 <button type="button" class="collapsible">Efficient and Near-Optimal Noise Generation for Streaming Differential Privacy<br><i>Krishnamurthy (Dj) Dvijootham, H. Brendan McMahan, Krishna Pillutla, <b>Thomas Steinke</b>, Abhradeep Thakkurta, Krishna Pillutla</i></button>
@@ -135,6 +140,7 @@ challenges.</p>
   <p>In the task of differentially private (DP) continual counting, we receive a stream of increments and our goal is to output an approximate running total of these increments, without revealing too much about any specific increment. Despite its simplicity, differentially private continual counting has attracted significant attention both in theory and in practice. Existing algorithms for differentially private continual counting are either inefficient in terms of their space usage or add an excessive amount of noise, inducing suboptimal utility.</p>
 
 <p>The most practical DP continual counting algorithms add carefully correlated Gaussian noise to the values. The task of choosing the covariance for this noise can be expressed in terms of factoring the lower-triangular matrix of ones (which computes prefix sums). We present two approaches from this class (for different parameter regimes) that achieve near-optimal utility for DP continual counting and only require logarithmic or polylogarithmic space (and time).</p>
+<p><a href="https://www.youtube.com/watch?v=gPnT-M1aQoo&list=PLsdxHQIBx6_ys20F9r98lTB5tjKeBl1Q9&index=11&pp=iAQB">Video</a></p>
 </div>
 
 </td>
@@ -227,6 +233,7 @@ Break<br>
 <div class="abstract">
   <p>This talk will cover three research directions pertinent to the DP community and relevant in modern machine learning. First, I will discuss training data attribution and high level connections to DP and membership inference. Next, I will cover data curation and potential intersections with differential privacy. Finally, I will discuss recent work on alternative privacy semantics tailored to modern use cases. In covering these areas, the primary focus will be on introducing the general directions to encourage interest and figure work. To this end, I will discuss my own work as well as others' when appropriate. <a href="https://jagielski.github.io/tpdp2024.html">Notes for the talk can be found here</a>.</p>
 <p><a href="https://jagielski.github.io/">Matthew Jagielski's website</a></p>
+<p><a href="">Video</a></p>
 </div>
 
 <br>
@@ -243,16 +250,19 @@ Break<br>
 <button type="button" class="collapsible">Differential privacy and Sublinear time are incompatible sometimes</a><br><i>Jeremiah Blocki, Hendrik Fichtenberger, Elena Grigorescu, <b>Tamalika Mukherjee</b></i></button>
 <div class="abstract">
   <p>Differential privacy and sublinear algorithms are both rapidly emerging algorithmic themes in times of big data analysis. Although recent works have shown the existence of differentially private sublinear algorithms for many problems including graph parameter estimation and clustering, little is known regarding hardness results on these algorithms. In this paper, we initiate the study of lower bounds for problems that aim for both differentially-private and sublinear-time algorithms. Our main result is the incompatibility of both the desiderata in the general case. In particular, we prove that a simple problem based on one-way marginals yields both a differentially-private algorithm, as well as a sublinear-time algorithm, but does not admit a "strictly" sublinear-time algorithm that is also differentially private.</p>
+<p><a href="https://www.youtube.com/watch?v=b9tjJENQIOQ&list=PLsdxHQIBx6_ys20F9r98lTB5tjKeBl1Q9&index=4&pp=iAQB">Video</a></p>
 </div>
 
 <button type="button" class="collapsible">Instance-Optimal Private Density Estimation in the Wasserstein Distance</a><br><i>Vitaly Feldman, Audra McMillan, <b>Satchit Sivakumar</b>, Kunal Talwar</i></button>
 <div class="abstract">
   <p>In this work, we study density estimation in the Wasserstein distance (an appropriate metric in many practical settings like estimating population density). We move beyond (pessimistic) worst-case bounds for this problem and instead approach it from an 'instance optimality' lens- asking that algorithms adapt to easy instances.  We define strong notions of instance optimality, characterize the corresponding instance optimal rates, and show that variants of practical algorithms achieve these rates (up to polylogarithmic factors).</p>
+<p><a href="https://www.youtube.com/watch?v=4vvwto3LmiQ&list=PLsdxHQIBx6_ys20F9r98lTB5tjKeBl1Q9&index=5&pp=iAQB">Video</a></p>
 </div>
 
 <button type="button" class="collapsible">Sample-Optimal Locally Private Hypothesis Selection and the Provable Benefits of Interactivity</a><br><i>Alireza F. Pour, <b>Hassan Ashtiani</b>, Shahab Asoodeh</i></button>
 <div class="abstract">
   <p>We study the problem of hypothesis selection under the constraint of local differential privacy (ε-LDP). Our main contribution is the first sample-optimal algorithm for this problem in the high privacy regime. Namely, the dependence of the proposed algorithm on the number of hypotheses is linear. This algorithm uses loglog k rounds of (sequential) interaction for choosing from k hypotheses. Our result demonstrates the power of interaction in LDP hypothesis selection as any non-interactive algorithm requires at least Ω(klogk) samples. To prove our results, we define the notion of critical queries for a Statistical Query Algorithm (SQA) which may be of independent interest. Informally, an SQA is said to use a small number of critical queries if its success relies on the accuracy of only a small number of queries it asks. We then design an LDP algorithm that uses a smaller number of critical queries.</p>
+<p><a href="https://www.youtube.com/watch?v=dhMZAjdipdo&list=PLsdxHQIBx6_ys20F9r98lTB5tjKeBl1Q9&index=8&pp=iAQB">Video</a></p>
 </div>
 
 </td>
@@ -308,6 +318,7 @@ there are a number of non-research factors that can derail would-be implementers
 current challenges organizations are facing in their efforts to deploy DP, ranging from knowledge gaps, people
 problems, risk calculations, and more.</p>
 <p><a href="https://www.nist.gov/people/naomi-lefkovitz">Naomi Lefkovitz's website</a></p>
+<p><a href="https://www.youtube.com/watch?v=LArg7o6xbpw&list=PLsdxHQIBx6_ys20F9r98lTB5tjKeBl1Q9&index=3&pp=iAQB">Video</a></p>
 </div>
 
 <br>
@@ -324,16 +335,19 @@ problems, risk calculations, and more.</p>
 <button type="button" class="collapsible">Joint Selection: Adaptively Incorporating Public Information for Private Synthetic Data<br><i><b>Miguel Fuentes</b>, Brett Mullins, Ryan McKenna, Gerome Miklau, Daniel Sheldon, Brett Mullins</i></button>
 <div class="abstract">
   <p>Mechanisms for generating differentially private synthetic data based on marginals and graphical models have been successful in a wide range of settings. However, one limitation of these methods is their inability to incorporate public data. Initializing a data generating model by pre-training on public data has shown to improve the quality of synthetic data, but this technique is not applicable when model structure is not determined a priori. We develop the mechanism JAM-PGM, which expands the adaptive measurements framework to jointly select between measuring public data and private data. This technique allows for public data to be included in a graphical-model-based mechanism. We show that jam-pgm is able to outperform both publicly assisted and non publicly assisted synthetic data generation mechanisms even when the public data distribution is biased.</p>
+<p><a href="https://www.youtube.com/watch?v=RWEhQYeDktE&list=PLsdxHQIBx6_ys20F9r98lTB5tjKeBl1Q9&index=7&pp=iAQB">Video</a></p>
 </div>
 
 <button type="button" class="collapsible">Private Fine-tuning of Large Language Models with Zeroth-order Optimization<br><i>Xinyu Tang, <b>Ashwinee Panda</b>, Milad Nasr, Saeed Mahloujifar, Prateek Mittal</i></button>
 <div class="abstract">
   <p>DP-SGD is the workhorse algorithm for private deep learning, but has proven difficult to scale to the era of foundation models. We introduce DP-ZO, a framework for privatizing zeroth order optimization methods. Unlike DP-SGD methods, such as DP-LoRA, DP-ZO does not require implementing the cumbersome per-sample gradient clipping operation because the update information from each sample is a scalar. DP-ZO methods are competitive in utility with DP-SGD while using far less memory, and we contend that DP-ZO methods may be superior to DP-SGD for finetuning models at the foundation scale. We outline a number of future directions for improving the analysis and implementation of DP-ZO methods.</p>
+<p><a href="https://www.youtube.com/watch?v=u_iNBxgrwJk&list=PLsdxHQIBx6_ys20F9r98lTB5tjKeBl1Q9&index=9&pp=iAQB">Video</a></p>
 </div>
 
 <button type="button" class="collapsible">Provable Privacy with Non-Private Pre-Processing<br><i><b>Yaxi Hu</b>, Amartya Sanyal, Bernhard Schölkopf</i></button>
 <div class="abstract">
   <p>When analysing Differentially Private (DP) machine learning pipelines, the potential privacy cost of data-dependent pre-processing is frequently overlooked in privacy accounting. In this work, we propose a general framework to evaluate the additional privacy cost incurred by non-private data-dependent pre-processing algorithms. Our framework establishes upper bounds on the overall privacy guarantees by utilising two new technical notions: a variant of DP termed Smooth DP and the bounded sensitivity of the pre-processing algorithms. In addition to the generic framework, we provide explicit overall privacy guarantees for multiple data-dependent pre-processing algorithms, such as scaling, data imputation, quantization, deduplication and PCA, when used in combination with several DP algorithms. Notably, this framework is also simple to implement, allowing direct integration into existing DP pipelines.</p>
+<p><a href="https://www.youtube.com/watch?v=UAI6FhYwBsw&list=PLsdxHQIBx6_ys20F9r98lTB5tjKeBl1Q9&index=6&pp=iAQB">Video</a></p>
 </div>
 
 </td>
