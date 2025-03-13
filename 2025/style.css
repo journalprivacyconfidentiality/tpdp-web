@@ -148,7 +148,8 @@ div.side dd {
 }
 
 li.pc {
-  padding-top: 1px;
+    padding-top: 1px;
+    padding-bottom:5px;
 }
 
 div.content {
