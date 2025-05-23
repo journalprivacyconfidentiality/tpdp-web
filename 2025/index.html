@@ -129,6 +129,24 @@ Welcome
 <td></td>
 <td>
 Contributed Talks: Session #1
+
+<button type="button" class="collapsible">The Last Iterate Advantage: Empirical Auditing and Principled Heuristic Analysis of Differentially Private SGD <br><i><b>Thomas Steinke</b>, Milad Nasr, Arun Ganesh, Borja Balle, Christopher A. Choquette-Choo, Matthew Jagielski, Jamie Hayes, Abhradeep Guha Thakurta, Adam Smith, Andreas Terzis</i></button>
+<div class="abstract">
+  <p>We propose a simple heuristic privacy analysis of noisy clipped stochastic gradient descent (DP-SGD) in the setting where only the last iterate is released and the intermediate iterates remain hidden. Namely, our heuristic assumes a linear structure for the model.
+We show experimentally that our heuristic is predictive of the outcome of privacy auditing applied to various training procedures. Thus it can be used prior to training as a rough estimate of the final privacy leakage. We also probe the limitations of our heuristic by providing some artificial counterexamples where it underestimates the privacy leakage.
+The standard composition-based privacy analysis of DP-SGD effectively assumes that the adversary has access to all intermediate iterates, which is often unrealistic. However, this analysis remains the state of the art in practice. While our heuristic does not replace a rigorous privacy analysis, it illustrates the large gap between the best theoretical upper bounds and the privacy auditing lower bounds and sets a target for further work to improve the theoretical privacy analyses. We also empirically support our heuristic and show existing privacy auditing attacks are bounded by our heuristic analysis in both vision and language tasks.</p>
+</div>
+
+<button type="button" class="collapsible">Privacy amplification by random allocation<br><i><b>Moshe Shenfeld</b>, Vitaly Feldman</i></button>
+<div class="abstract">
+  <p>We consider the privacy privacy amplification properties of a sampling scheme in which a user's data is used in $k$ steps chosen randomly and uniformly from a sequence (or set) of $t$ steps. This sampling scheme has been recently applied in the context of differentially private optimization [Chua et al., 2024a, Choquette-Choo et al., 2024] and is also motivated by communication-efficient high-dimensional private aggregation [Asi et al., 2025]. Existing analyses of this scheme either rely on privacy amplification by shuffling which leads to overly conservative bounds or require Monte Carlo simulations that are computationally prohibitive in most practical scenarios.</p>
+</div>
+
+<button type="button" class="collapsible">Generate-then-Verify: Reconstructing Data from Limited Published Statistics<br><i>Terrance Liu, Eileen Xiao, Pratiksha Thaker, Adam Smith, Zhiwei Steven Wu</i></button>
+<div class="abstract">
+  <p>We study the problem of reconstructing tabular data from aggregate statistics, in which the attacker aims to identify interesting claims about the sensitive data that can be verified with 100% certainty given the aggregates. Successful attempts in prior work have conducted studies in settings where the set of published statistics is rich enough that entire datasets can be reconstructed with certainty. In our work, we instead focus on the regime where many possible datasets match the published statistics, making it impossible to reconstruct the entire private dataset perfectly (i.e., when approaches in prior work fail). We propose the problem of partial data reconstruction, in which the goal of the adversary is to instead output a subset of rows and/or columns that are guaranteed to be correct. We introduce a novel integer programming approach that first generates a set of claims and then verifies whether each claim holds for all possible datasets consistent with the published aggregates. We evaluate our approach on the housing-level microdata from the U.S. Decennial Census release, demonstrating that privacy violations can still persist even when information published about such data is relatively sparse.</p>
+</div>
+
 <br>
 </td>
 </tr>
