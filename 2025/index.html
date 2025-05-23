@@ -105,8 +105,9 @@ Welcome
 </td>
 <td></td>
 <td>
+Keynote #1
 
-<button type="button" class="collapsible">Keynote: Practical Private Mean Estimation: Toward Instance-Adaptivity and Computational Efficiency<br>
+<button type="button" class="collapsible">Practical Private Mean Estimation: Toward Instance-Adaptivity and Computational Efficiency<br>
 <i>Lydia Zakynthinou (Invited Speaker)</i></button>
 <div class="abstract">
   <p>Practical differentially private statistical estimation should ideally combine strong error guarantees, computational efficiency, robustness, and minimal reliance on user-specified assumptions. In this talk, I will highlight recent progress toward these goals, through the fundamental problem of mean estimation. 
@@ -210,7 +211,32 @@ Break<br>
 </td>
 <td></td>
 <td>
-Contributed Talks: Session #2<br>
+Contributed Talks: Session #2
+
+<button type="button" class="collapsible">Leveraging Per-Instance Privacy for Machine Unlearning<br><i>Nazanin Mohammadi Sepahvand, Anvith Thudi, Berivan Isik, Ashmita Bhattacharyya, Nicolas Papernot, Eleni Triantafillou, Daniel M. Roy, Gintare Karolina Dziugaite</i></button>
+<div class="abstract">
+  <p>We present a principled, per-instance approach to quantifying the difficulty of unlearning via fine-tuning. We begin by sharpening an analysis of noisy gradient descent for unlearning, obtaining a better utility--unlearning tradeoff by replacing worst-case privacy loss bounds with per-instance privacy losses, each of which bounds the (Renyi) divergence to retraining without an individual data point. To demonstrate the practical applicability of our theory, we present empirical results showing that our theoretical predictions are born out both for Stochastic Gradient Langevin Dynamics (SGLD) as well as for standard fine-tuning without explicit noise. We further demonstrate that per-instance privacy losses correlate well with several existing data difficulty metrics, while also identifying harder groups of data points, and introduce novel evaluation methods based on loss barriers. All together, our findings provide a foundation for more efficient and adaptive unlearning strategies tailored to the unique properties of individual data points.</p>
+</div>
+
+<button type="button" class="collapsible">Trade-offs in Data Memorization via Strong Data Processing Inequalities <br><i>Vitaly Feldman, Guy Kornowski, <b>Xin Lyu</b></i></button>
+<div class="abstract">
+  <p>Recent research demonstrated that training large language models involves memorization of a significant fraction of training data. Such memorization can lead to privacy violations when training on sensitive user data and thus motivates the study of data memorization's role in learning. In this work, we demonstrate that several simple and well-studied binary classification problems exhibit a trade-off between the number of samples available to a learning algorithm and the amount of information about the training data that a learning algorithm needs to memorize to be accurate.
+
+In particular, $\Omega(d)$ bits of information about the training data need to be memorized when a single $d$-dimensional example is available, which then decays as $\Theta(d/n)$ as the number of examples grows (for $n\leq \sqrt{d}$). Further,  this rate is achieved (up to logarithmic factors) by simple learning algorithms. Our results build on the work of Brown et al. (2021) and establish a new framework for proving memorization lower bounds that is based on an approximate version of strong data processing inequalities.
+</p>
+</div>
+
+<button type="button" class="collapsible">New Bounds for Private Graph Optimization Problems via Synthetic Graphs<br><i>Anders Aamand, Rasmus Pagh, <b>Lukas Retschmeier</b>, Anders Aamand</i></button>
+<div class="abstract">
+  <p>We consider the graph optimization problems of privately releasing the edges of minimum-weight spanning trees, perfect matchings, and shortest paths as introduced by Sealfon [PODS 2016]. Given a public graph topology $G= (V,E)$, together with private edge weights $\W \in \R^{E}$, we want to publish an approximate solution to those problems under edge-weight differential privacy.</p>
+</div>
+
+<button type="button" class="collapsible">Fully Dynamic Graph Algorithms with Edge Differential Privacy<br><i><b>Sofya Raskhodnikova</b>, Teresa Anna Steiner</i></button>
+<div class="abstract">
+  <p>We study differentially private algorithms for analyzing graphs in the challenging setting of continual release with fully dynamic updates, where edges are inserted and deleted over time, and the algorithm is required to update the solution at every time step. Previous work has presented differentially private algorithms for many graph problems that can handle insertions only or deletions only (called partially dynamic algorithms) and obtained some hardness results for the fully dynamic setting. The only algorithms in the latter setting were for the edge count, given by Fichtenberger, Henzinger, and Ost (ESA 21), and for releasing the values of all graph cuts, given by Fichtenberger, Henzinger, and Upadhyay (ICML 23). We provide the first differentially private and fully dynamic graph algorithms for several other fundamental graph statistics (including the triangle count, the number of connected components, the size of the maximum matching, and the degree histogram), analyze their error and show strong lower bounds on the error for all algorithms in this setting. We study two variants of edge differential privacy for fully dynamic graph algorithms: event-level and item-level. We give upper and lower bounds on the error of both event-level and item-level fully dynamic algorithms for several fundamental graph problems. No fully dynamic algorithms that are private at the item-level (the more stringent of the two notions) were known before. In the case of item-level privacy, for several problems, our algorithms match our lower bounds.</p>
+</div>
+
+<br>
 </td>
 </tr>
 
@@ -258,9 +284,9 @@ Breakfast
 9:00-9:50
 </td>
 <td></td>
-<td>
+<td> Keynote #2
 
-<button type="button" class="collapsible">Keynote: Let's Ask Some Big Questions About Theory and Practice.<br>
+<button type="button" class="collapsible">Let's Ask Some Big Questions About Theory and Practice.<br>
 <i>Lucas Rosenblatt (Invited Speaker)</i></button>
 <div class="abstract">
   <p>In this talk I try to stitch together some recent work - some my own and some others’ - to probe practical, important, and intertwined questions: How can we provide and evaluate differentially private (DP) synthetic data to address epistemic concerns of practitioners? Are we targeting the problems practitioners face every day - say, DP under extreme class imbalance, for e.g., EHRs and fraud detection - or merely the ones that make tidy papers? With the advent of LLM supremacy, how do we want to treat its output (Is it public? Is it useful under DP?) Do we understand the right LLM threat models, and do DP defenses make sense? I will trace these questions from theory to practice as best I can, and frame open challenges that I hope we can address as a community.</p>
@@ -278,6 +304,23 @@ Breakfast
 <td></td>
 <td>
 Contributed Talks: Session #3
+
+<button type="button" class="collapsible">Differentially Private Learning Beyond the Classical Dimensionality Regime <br><i>Cynthia Dwork, <b>Pranay Tankala</b>, Linjun Zhang</i></button>
+<div class="abstract">
+  <p>We initiate the study of differentially private learning in the proportional dimensionality regime, in which the number of data samples n and problem dimension d approach infinity at rates proportional to one another, meaning that d/n-->delta as n-->infinity for an arbitrary, given constant 0<$delta$<$infinity$. This setting is significantly more challenging than that of all prior theoretical work in high-dimensional differentially private learning, which, despite the name, has assumed that delta=0 or is sufficiently small for problems of sample complexity O(d), a regime typically considered “low-dimensional” or “classical” by modern standards in high-dimensional statistics.</p>
+</div>
+
+<button type="button" class="collapsible">Adapting to Linear Separable Subsets with Large-Margin in Differentially Private Learning
+<br><i><b>Erchi Wang</b>, Yuqing Zhu, Yu-Xiang Wang</i></button>
+<div class="abstract">
+  <p>This paper studies the problem of differentially private empirical risk minimization (DP-ERM) for binary linear classification. We obtain an efficient $(\varepsilon,\delta)$-DP algorithm with an empirical zero-one risk bound of $\tilde{O}\left(\frac{1}{\gamma^2\varepsilon n} + \frac{|S_{\mathrm{out}}|}{\gamma n}\right)$ where $n$ is the number of data points, $S_{\mathrm{out}}$ is an arbitrary subset of data one can remove and $\gamma$ is the margin of linear separation of the remaining data points (after $S_{\mathrm{out}}$ is removed). Here, $\tilde{O}(\cdot)$ hides only logarithmic terms. In the agnostic case, we improve the existing results when the number of outliers is small. Our algorithm is highly adaptive because it does not require knowing the margin parameter $\gamma$ or outlier subset $S_{\mathrm{out}}$.</p>
+</div>
+
+<button type="button" class="collapsible">It's My Data Too: Private ML for Datasets with Multi-User Training Examples<br><i><b>Arun Ganesh</b>, Ryan McKenna, Brendan McMahan, Adam Smith, Fan Wu</i></button>
+<div class="abstract">
+  <p>We initiate a study of algorithms for model training with user-level differential privacy (DP), where each example may be attributed to multiple users, which we call the multi-attribution model. We first provide a carefully chosen definition of user-level DP under the multi-attribution model. Training in the multi-attribution model is facilitated by solving the contribution bounding problem, i.e. the problem of selecting a subset of the dataset for which each user is associated with a limited number of examples. We propose a greedy baseline algorithm for the contribution bounding problem. We then empirically study this algorithm for a synthetic logistic regression task and a transformer training task, including studying variants of this baseline algorithm that optimize the subset chosen using different techniques and criteria. We find that the baseline algorithm remains competitive with its variants in most settings, and build a better understanding of the practical importance of a bias-variance tradeoff inherent in solutions to the contribution bounding problem.</p>
+</div>
+
 <br>
 </td>
 </tr>
