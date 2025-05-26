@@ -226,9 +226,16 @@ In particular, $\Omega(d)$ bits of information about the training data need to b
 </p>
 </div>
 
-<button type="button" class="collapsible">New Bounds for Private Graph Optimization Problems via Synthetic Graphs<br><i>Anders Aamand, Rasmus Pagh, <b>Lukas Retschmeier</b>, Anders Aamand</i></button>
+<button type="button" class="collapsible">New Bounds for Private Graph Optimization Problems via Synthetic Graphs<br><i>Anders Aamand, Rasmus Pagh, <b>Lukas Retschmeier</b></i></button>
 <div class="abstract">
-  <p>We consider the graph optimization problems of privately releasing the edges of minimum-weight spanning trees, perfect matchings, and shortest paths as introduced by Sealfon [PODS 2016]. Given a public graph topology $G= (V,E)$, together with private edge weights $\W \in \R^{E}$, we want to publish an approximate solution to those problems under edge-weight differential privacy.</p>
+  <p>We consider the graph optimization problems of privately releasing the edges of minimum-weight \emph{spanning trees}, \emph{perfect matchings}, and \emph{shortest paths} as introduced by Sealfon [PODS 2016].</p>
+
+<p>Given a public graph topology $G=(V, E)$, together with private edge weights $\mathbf{W} \in \mathbb{R}^{E}$, we want to publish an approximate solution to those problems under \emph{edge-weight} differential privacy.
+We show new asymptotically tight additive error bounds for all three problems under the $\ell_1$ neighboring relationship.Interestingly, the mechanisms achieving these bounds are the simplest one can imagine: Construct a private synthetic graph by adding noise to the edge weights and then run a non-private graph algorithm. Concretely, we improve Sealfon's lower bound technique for spanning trees and matchings, increasing the bound from $\Omega(n/\epsilon)$ to $\Omega((n/\epsilon) \min(\log(1/\delta), \log n))$ which matches the known upper bound in the regime $\delta=n^{-\Omega(1)}$.</p>
+
+<p>For shortest paths, we show that adding Laplace noise to weights and capping the noisy edge weight at zero (so that the new weight is non-negative), yields a synthetic graph that, with probability $1-\exp(-\Omega(n))$, preserves all $s$-$t$ shortest path distances within additive error $O(n/\eps)$. This improves on Sealfon's $O((n\log n)/\eps)$ upper bound and matches his lower bound within a constant factor. </p>
+
+<p>Lastly, we present preliminary work on these problems under the $\ell_\infty$ neighboring relationship.</p>
 </div>
 
 <button type="button" class="collapsible">Fully Dynamic Graph Algorithms with Edge Differential Privacy<br><i><b>Sofya Raskhodnikova</b>, Teresa Anna Steiner</i></button>
@@ -529,7 +536,7 @@ Contributed Talks: Session #5
 <li> Differential Privacy for Connectedness Indices <br> <i> Tom Rutter, Amin Rahimian </i> </li> <br>
 <li> <a href="https://arxiv.org/abs/2412.12374">Privacy in Metalearning and Multitask Learning: Modeling and Separations</a> <br> <i> Maryam Aliakbarpour, Konstantina Bairaktari, Adam Smith, Marika Swanberg, Jonathan Ullman </i> </li> <br>
 <li> <a href="https://arxiv.org/abs/2410.06186">The Last Iterate Advantage: Empirical Auditing and\\Principled Heuristic Analysis of Differentially Private SGD</a> <br> <i> Thomas Steinke, Milad Nasr, Arun Ganesh, Borja Balle, Christopher A. Choquette-Choo, Matthew Jagielski, Jamie Hayes, Abhradeep Guha Thakurta, Adam Smith, Andreas Terzis </i> </li> <br>
-<li> <a href="">New Bounds for Private Graph Optimization Problems via Synthetic Graphs</a> <br> <i> Anders Aamand, Rasmus Pagh, Lukas Retschmeier, Anders Aamand </i> </li> <br>
+<li> <a href="pdf/aamand.pdf">New Bounds for Private Graph Optimization Problems via Synthetic Graphs</a> <br> <i> Anders Aamand, Rasmus Pagh, Lukas Retschmeier </i> </li> <br>
 <li> <a href="https://arxiv.org/abs/2503.11897">PREAMBLE: Private and Efficient Aggregation of Block Sparse Vectors and Applications</a> <br> <i> Hilal Asi, Vitaly Feldman, Hannah Keller, Guy Rothblum, Kunal Talwar </i> </li> <br>
 <li> <a href="https://arxiv.org/abs/2505.05347">InfTDA: A Simple TopDown Mechanism for Hierarchical Differentially Private Counting Queries</a> <br> <i> Fabrizio Boninsegna </i> </li> <br>
 <li> Bridging Privacy and Accuracy: Asymptotically Negligible Noise by Exponential Mechanism <br> <i> Young Hyun Cho, Yu Wei Chen, Jordan Awan </i> </li> <br>
