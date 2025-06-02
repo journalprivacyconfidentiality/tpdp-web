@@ -210,7 +210,7 @@ Break<br>
 
 <tr>
 <td style="width: 100px;">
-2:50-3:50
+2:50-3:35
 </td>
 <td></td>
 <td>
@@ -231,18 +231,6 @@ In particular, $\Omega(d)$ bits of information about the training data need to b
 </p>
 </div>
 
-<button type="button" class="collapsible">New Bounds for Private Graph Optimization Problems via Synthetic Graphs<br><i>Anders Aamand, Rasmus Pagh, <b>Lukas Retschmeier</b></i></button>
-<div class="abstract">
-  <p>We consider the graph optimization problems of privately releasing the edges of minimum-weight \emph{spanning trees}, \emph{perfect matchings}, and \emph{shortest paths} as introduced by Sealfon [PODS 2016].</p>
-
-<p>Given a public graph topology $G=(V, E)$, together with private edge weights $\mathbf{W} \in \mathbb{R}^{E}$, we want to publish an approximate solution to those problems under \emph{edge-weight} differential privacy.
-We show new asymptotically tight additive error bounds for all three problems under the $\ell_1$ neighboring relationship.Interestingly, the mechanisms achieving these bounds are the simplest one can imagine: Construct a private synthetic graph by adding noise to the edge weights and then run a non-private graph algorithm. Concretely, we improve Sealfon's lower bound technique for spanning trees and matchings, increasing the bound from $\Omega(n/\epsilon)$ to $\Omega((n/\epsilon) \min(\log(1/\delta), \log n))$ which matches the known upper bound in the regime $\delta=n^{-\Omega(1)}$.</p>
-
-<p>For shortest paths, we show that adding Laplace noise to weights and capping the noisy edge weight at zero (so that the new weight is non-negative), yields a synthetic graph that, with probability $1-\exp(-\Omega(n))$, preserves all $s$-$t$ shortest path distances within additive error $O(n/\eps)$. This improves on Sealfon's $O((n\log n)/\eps)$ upper bound and matches his lower bound within a constant factor. </p>
-
-<p>Lastly, we present preliminary work on these problems under the $\ell_\infty$ neighboring relationship.</p>
-</div>
-
 <button type="button" class="collapsible">Fully Dynamic Graph Algorithms with Edge Differential Privacy<br><i><b>Sofya Raskhodnikova</b>, Teresa Anna Steiner</i></button>
 <div class="abstract">
   <p>We study differentially private algorithms for analyzing graphs in the challenging setting of continual release with fully dynamic updates, where edges are inserted and deleted over time, and the algorithm is required to update the solution at every time step. Previous work has presented differentially private algorithms for many graph problems that can handle insertions only or deletions only (called partially dynamic algorithms) and obtained some hardness results for the fully dynamic setting. The only algorithms in the latter setting were for the edge count, given by Fichtenberger, Henzinger, and Ost (ESA 21), and for releasing the values of all graph cuts, given by Fichtenberger, Henzinger, and Upadhyay (ICML 23). We provide the first differentially private and fully dynamic graph algorithms for several other fundamental graph statistics (including the triangle count, the number of connected components, the size of the maximum matching, and the degree histogram), analyze their error and show strong lower bounds on the error for all algorithms in this setting. We study two variants of edge differential privacy for fully dynamic graph algorithms: event-level and item-level. We give upper and lower bounds on the error of both event-level and item-level fully dynamic algorithms for several fundamental graph problems. No fully dynamic algorithms that are private at the item-level (the more stringent of the two notions) were known before. In the case of item-level privacy, for several problems, our algorithms match our lower bounds.</p>
@@ -254,7 +242,7 @@ We show new asymptotically tight additive error bounds for all three problems un
 
 <tr>
 <td style="width: 100px;">
-3:50-5:20
+3:40-5:10
 </td>
 <td></td>
 <td>
@@ -500,7 +488,7 @@ Contributed Talks: Session #5
 <li> <a href="https://eprint.iacr.org/2025/817">Relating Definitions of Computational Differential Privacy in Wider Parameter Regimes</a> <br> <i> Fredrik Meisingseth, Christian Rechberger </i> </li> <br>
 <li> <a href="-1">Unbounded Differential Privacy Secure Against Timing Attacks</a> <br> <i> Zachary Ratliff, Salil Vadhan </i> </li> <br>
 <li> (ε, δ) Considered Harmful – Best Practices for Reporting Differential Privacy Guarantees <br> <i> Juan Felipe Gomez, Bogdan Kulynych, Georgios Kaissis, Jamie Hayes, Borja Balle, Antti Honkela </i> </li> <br>
-<li> Differential Privacy via Gaussian Mixing Mechanisms <br> <i> Omri Lev, Ayush Sekhari, Ashia Wilson </i> </li> <br>
+<li> <a href="https://arxiv.org/pdf/2505.24603">Differential Privacy via Gaussian Mixing Mechanisms</a> <br> <i> Omri Lev, Ayush Sekhari, Ashia Wilson </i> </li> <br>
 <li> <a href="https://arxiv.org/pdf/2503.24321">Sample-Optimal Private Regression in Polynomial Time</a> <br> <i> Prashanti Anderson, Ainesh Bakshi, Stefan Tiegel, Mahbod Majid </i> </li> <br>
 <li> <a href="https://www.pnas.org/doi/10.1073/pnas.2423072122">Privacy for Free in the Over-Parameterized Regime</a> <br> <i> Simone Bombari, Marco Mondelli </i> </li> <br>
 <li> <a href="">Lower Bounds for Public-Private Computation under Distribution Shift</a> <br> <i> Amrith Setlur, Pratiksha Thaker, Jonathan Ullman </i> </li> <br>
