@@ -1,0 +1,110 @@
+body {
+  background: #2d4e68;
+  background-image: url(Grenoble.jpg);
+  background-repeat:no-repeat;
+  background-position:top;
+
+  font-family: sans-serif;
+  font-size: medium;
+  margin-left: auto;  
+  margin-right: auto;
+  margin-bottom: 1em;
+  padding-left: .5em;
+  width: auto;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: large;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: large;
+  font-weight: normal;
+}
+
+.box {
+  background: white;
+  border: solid lightgray 1px;
+  margin-right: .5em;
+  margin-bottom: .5em;
+  padding-top: 0ex;
+  padding-left: 1ex;
+  padding-right: 1ex;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+div.box a {
+  color: rgb(44, 104, 163);
+}
+
+div.box h2 {
+  color: rgb(44, 104, 163);
+  padding-top: 1ex;
+  padding-bottom: 3px;
+  margin-top: 0px;
+  border-bottom: solid lightgray 1px;
+}
+
+#header {
+  margin-bottom: 2em;
+}
+
+div.side {
+  margin-left: 0em;  
+  margin-right: .5em;
+  float: none;
+  width: auto;
+  max-width: 21em;
+}
+
+div.side h2 {
+  font-size: medium;
+}
+
+div.side ul {
+  padding-left: 0em;
+  list-style: none;
+}
+
+li.pc {
+  padding-top: 1px;
+}
+
+div.content {
+  margin-left: 0em;  
+  margin-right: .5em;
+  float: none;
+  font-size: 1em;
+  width: auto;
+}
+
+div.content h2, p {
+  padding-left: .3ex;
+}
+
+#bg_descr {
+  font-size: small;
+  float: left;
+  color: white;
+  text-align:center;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#bg_descr a {
+  color: white;
+}
