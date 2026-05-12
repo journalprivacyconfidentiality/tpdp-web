@@ -24,12 +24,16 @@ def csv_to_html_list(input_path: str, output_path: str | None = None) -> str:
         csv_file.fieldnames = headers
         print("headers:", headers)
  
-        required = {"paper title", "list of all authors", "paper link"}
+        required = {"poster session", "paper title", "list of all authors", "paper link"}
         missing = required - set(headers)
         if missing:
             raise ValueError(f"CSV is missing expected columns: {missing}")
+
+        session_str = ""
+        end_session_block = "</ul>"
  
         for row in csv_file:
+            session = escape(row["poster session"].strip())
             title = escape(row["paper title"].strip())
             authors = escape(row["list of all authors"].strip())
             link = escape(row["paper link"].strip())
@@ -40,7 +44,24 @@ def csv_to_html_list(input_path: str, output_path: str | None = None) -> str:
                 f"<li> {title_html} <br>\n"
                 f"     <i>{authors}</i> </li> <br>"
             )
+            if session != session_str:
+                end_session_block = "" if session_str == "" else "</ul>"
+                session_lbl = "poster"+session.lower()
+
+                new_session_block = (
+                    f"{end_session_block} \n\n\n"
+                    f'<a name="{escape(session_lbl)}"></a>\n'
+                    f"<p><b>Poster Session {session}</b></p>\n"
+                    f"<ul>"
+                )
+
+                session_str = session
+                items.append(new_session_block)
+
             items.append(item)
+
+        if len(items) > 0:
+            items.append(end_session_block+"\n")
  
     html = "\n".join(items)
  
