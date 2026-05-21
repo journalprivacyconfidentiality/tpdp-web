@@ -124,7 +124,27 @@ Keynote #1
 </td>
 <td></td>
 <td>
-Contributed Talks: Session #1 
+Contributed Talks: The Theory of Everything 
+<button type="button" class="collapsible">Understanding Private Evolution as Learning-Augmented Clustering<br><i><b>Audra McMillan</b>, Kunal Talwar, Felix Zhou</i></button>
+<div class="abstract">
+  <p>Private Evolution (PE) is a differentially private algorithm for synthetic data generation. While it can be viewed as a Wasserstein learning algorithm, it performs much better in practice than worst‑case Wasserstein analyses would predict. We recast PE as a generative model‑augmented Wasserstein learning. We show theoretically that when we take into account the use of a generative model that is able to capture something about the true distribution, then we can obtain much better performance bounds. For example, if the generator gives samples in the same low-dimensional space as the distribution, then sample complexity depends on intrinsic, not ambient, dimension. We also show that standard variants of PE can fail to converge on simple well-clustered instances, and propose a new geometry-aware version of PE with provable convergence on such instances. Experimentally, we show that our new algorithm has consistent empirical gains over standard baselines.</p>
+</div>
+
+<button type="button" class="collapsible">Differentially Private Bilevel Optimization: Efficient Algorithms with Near-Optimal Rates<br><i><b>Andrew Lowy</b>, Daogao Liu</i></button>
+<div class="abstract">
+  <p>Bilevel optimization, in which one optimization problem is nested inside another, underlies many machine learning applications with a hierarchical structure -- such as meta-learning and hyperparameter optimization. Such applications often involve sensitive training data, raising pressing concerns about individual privacy. Motivated by this, we study differentially private bilevel optimization. We first focus on settings where the outer-level objective is convex, and provide novel upper and lower bounds on the excess empirical risk for both pure and approximate differential privacy. These bounds are nearly tight and essentially match the optimal rates for standard single-level differentially private ERM, up to additional terms that capture the intrinsic complexity of the nested bilevel structure. We also provide population loss bounds for bilevel stochastic optimization. The bounds are achieved in polynomial time via efficient implementations of the exponential and regularized exponential mechanisms. A key technical contribution is a new method and analysis of log-concave sampling under inexact function evaluations, which may be of independent interest. In the non-convex setting, we develop novel algorithms with state-of-the-art rates for privately finding approximate stationary points. Notably, our bounds do not depend on the dimension of the inner problem.</p>
+</div>
+
+<button type="button" class="collapsible">Keeping a Secret Requires a Good Memory: Space Lower-Bounds for Private Algorithms<br><i>Alessandro Epasto, Xin Lyu, <b>Pasin Manurangsi </b></i></button>
+<div class="abstract">
+  <p>We study the computational cost of differential privacy in terms of memory efficiency. While the trade-off between accuracy and differential privacy is well-understood, the inherent cost of privacy regarding memory use remains largely unexplored. This paper establishes for the first time an unconditional space lower bound for user-level differential privacy by introducing a novel proof technique based on a multi-player communication game.</p>
+</div>
+
+<button type="button" class="collapsible">Skirting Additive Error Barriers for Private Turnstile Streams<br><i>Anders Aamand, <b>Justin Y. Chen</b>, Sandeep Silwal</i></button>
+<div class="abstract">
+  <p>We study differentially private continual release of the number of distinct items in a turnstile stream, where items may be both inserted and deleted. We show that existing polynomial lower bounds on the additive error required for privacy can be circumvented when some multiplicative error is also allowed. We give algorithms for continual estimation of the number of distinct elements or F2 moment of the stream with polylogarithmic additive error at the cost of a small multiplicative error.</p>
+</div>
+<br>
 
 </td>
 </tr>
@@ -167,7 +187,33 @@ Lunch (on your own)<br>
 </td>
 <td></td>
 <td>
-Contributed Talks: Session #2
+Contributed Talks: A.I. Artificial Intelligence
+<button type="button" class="collapsible">CLIOPATRA: Extracting Private Information from LLM Insights <br><i>Meenatchi Sundaram Muthu Selva Annamalai, Emiliano De Cristofaro, <b>Peter Kairouz</b></i></button>
+<div class="abstract">
+  <p>The widespread adoption of AI assistants has prompted the development of privacy-aware platforms designed to extract insights from real-world usage. Their privacy protections primarily rely on layering multiple heuristic techniques, such as PII redaction, clustering, aggregation, and LLM-based privacy auditing. In this paper, we put their privacy claims to the test by presenting CLIOPATRA, the first attack against "privacy-preserving" LLM-based insights systems. </p>
+</div>
+
+<button type="button" class="collapsible">DPrivBench: Benchmarking LLMs’ Reasoning for Differential Privacy<br><i><b>Erchi Wang</b>, Pengrun Huang, Eli Chien, Om Thakkar, Kamalika Chaudhuri, Yu-Xiang Wang, Ruihan Wu</i></button>
+<div class="abstract">
+  <p>Differential privacy (DP) has a wide range of applications for protecting data privacy, but designing and verifying DP algorithms requires expert-level reasoning, creating a high barrier for non-expert practitioners. Prior works either rely on specialized verification languages that demand substantial domain expertise or remain semi-automated and require human-in-the-loop guidance. In this work, we investigate whether large language models (LLMs) can automate DP reasoning. We introduce DPrivBench, a benchmark in which each instance asks whether a function or algorithm satisfies a stated DP guarantee under specified assumptions.  The benchmark is carefully designed to cover a broad range of DP topics, span diverse difficulty levels, and resist shortcut reasoning through trivial pattern matching. Experiments show that while the strongest models handle textbook mechanisms well, all models struggle with advanced algorithms, revealing substantial gaps in current DP reasoning capabilities. Our benchmark provides a solid foundation for developing and evaluating such methods, and complements existing benchmarks for mathematical reasoning.</p>
+</div>
+
+<button type="button" class="collapsible">ContinuousBench: Can Differentially Private Synthetic Text Improve Capabilities?<br><i><b>Peihan Liu</b>, Lucas Rosenblatt, Weiwei Kong, Natalia Ponomareva, Gautam Kamath, Rachel Cummings, Roxana Geambasu, Yu Gan, Lillian Tsai, Alex Bie</i></button>
+<div class="abstract">
+  <p>Differentially private (DP) text synthesis promises to unlock sensitive corpora for model training, but it remains unclear whether DP synthetic data transmits genuinely new knowledge and capabilities present only in those corpora. This is because existing evaluations rely on tasks that are nearly solvable without training, so strong benchmark performance does not establish that DP synthesis can substitute original data access. Thus, we introduce ContinuousBench, a continuously and automatically-regenerated benchmark that measures capability gain from DP synthetic text. Each quarter, a new release pairs a never-before-seen training corpus with a derived QA set, constructed to be: (1) unsolvable sans-corpus; and (2) learnable under DP, as the tested knowledge is supported by hundreds of independent records. Researchers produce DP synthetic data from the training corpus and run our standardized training and evaluation harness on their synthetic data to measure gains. We instantiate two tracks: Geminon, a procedurally-generated dataset about fictional creatures; and News, a stream of newly scraped public news articles. Although standard benchmarks are nearly saturated, on ContinuousBench we find that non-private synthesis transfers substantial knowledge from the original corpus, while state-of-the-art DP synthesis methods generally fail to do so, even at ε = 100. ContinuousBench is available at https://huggingface.co/ContinuousBench</p>
+</div>
+
+<button type="button" class="collapsible">Blameless Users in a Clean Room: Defining Copyright Protection for Generative Model<br><i><b>Aloni Cohen</b></i></button>
+<div class="abstract">
+  <p>Are there any conditions under which a generative model's outputs are guaranteed not to infringe the copyrights of its training data? This is the question of "provable copyright protection" first posed by Vyas, Kakade, and Barak (ICML 2023). They define near access-freeness (NAF) and propose it as sufficient for protection. This paper revisits the question and establishes new foundations for provable copyright protection -- foundations that are firmer both technically and legally. First, we show that NAF alone does not prevent infringement. In fact, NAF models can enable verbatim copying, a blatant failure of copyright protection that we dub being tainted. Then, we introduce our blameless copyright protection framework for defining meaningful guarantees, and instantiate it with clean-room copyright protection. Clean-room copyright protection allows a user to control their risk of copying by behaving in a way that is unlikely to copy in a counterfactual "clean-room setting." Finally, we formalize a common intuition about differential privacy and copyright by proving that DP implies clean-room copyright protection when the dataset is golden, a copyright deduplication requirement.</p>
+</div>
+            
+<button type="button" class="collapsible">Data Sharing for Endogenous Choices over Differential Privacy Levels <br><i>Raef Bassily, Kate Donahue, <b>Diptangshu Sen </b>, Annuo Zhao, Juba Ziani</i></button>
+<div class="abstract">
+  <p>We study coalition formation for data sharing under differential privacy when agents have heterogeneous privacy preferences. We study a fully decentralized data sharing mechanism where each agent holds a sensitive data point and decides whether to participate in a data-sharing coalition and how much noise to add to their data. Privacy choices induce a fundamental trade-off: higher privacy reduces individual data-sharing costs but degrades data utility and statistical accuracy for the coalition. These choices generate externalities across agents, making both participation and privacy levels strategic. Our goal is to understand which coalitions are stable, how privacy choices shape equilibrium outcomes, and how fully decentralized data sharing compares to a centralized, socially optimal benchmark when the number of players is large. We provide a comprehensive analysis across a range of privacy-cost regimes, from decreasing costs (privacy amplification from pooling data) to increasing costs (greater exposure to privacy attacks in larger coalitions), characterizing: i) which regimes offer non-trivial improvements in accuracy and social cost; and ii) the efficiency gap between the centralized and decentralized mechanisms. The main insight is that full decentralization is often highly inefficient, primarily due to players being risk-averse and selfishly choosing highly stringent privacy levels for themselves. </p>
+</div>
+
+<br>
 </td>
 </tr>
 
@@ -199,8 +245,23 @@ Break
 </td>
 <td></td>
 <td>
-Contributed Talks: Session #3
+Contributed Talks: Private Practice
+<button type="button" class="collapsible">Privacy in Theory, Bugs in Practice: Grey-Box Auditing of Differential Privacy Libraries<br><i><b>Tudor Cebere</b>, David Erb, Damien Desfontaines, Aurélien Bellet, Jack Fitzsimons</i></button>
+<div class="abstract">
+  <p>While differential privacy provides strong mathematical guarantees, practical implementations often suffer from subtle bugs that invalidate these theoretical protections. To address this, we introduce a novel auditing framework, Re:cord-play, that inspects the internal states of DP algorithms to overcome the limitations of standard black-box testing. By isolating the privacy mechanisms, our approach can deterministically catch data leaks into data-independent logic or flag sensitivity miscalculations. In this presentation, we will detail the framework's methodology and showcase real-world vulnerabilities discovered through audits of popular open-source DP libraries, revealing actionable privacy violations.</p>
+</div>
 
+<button type="button" class="collapsible">JAX-Privacy: A library for differentially private machine learning<br><i><b>Ryan McKenna</b>, Galen Andrew, Borja Balle, Vadym Doroshenko, Arun Ganesh, Weiwei Kong, Alex Kurakin, Brendan McMahan, Mikhail Pravilov</i></button>
+<div class="abstract">
+  <p>JAX-Privacy is a library designed to simplify the deployment of robust and performant mechanisms for differentially private machine learning. Guided by design principles of usability, flexibility, and efficiency, JAX-Privacy serves both researchers requiring deep customization and practitioners who want a more out-of-the-box experience. The library provides verified, modular primitives for critical components for all aspects of the mechanism design including batch selection, gradient clipping, noise addition, accounting, and auditing, and brings together a large body of recent research on differentially private ML.</p>
+</div>
+
+<button type="button" class="collapsible">A Unified Framework for Adversary-Aware Differential Privacy Bounds<br><i><b>Marika Swanberg</b>, Meenatchi Sundaram Muthu Selva Annamalai, Jamie Hayes, Borja Balle, Adam Smith</i></button>
+<div class="abstract">
+  <p>Differential Privacy (DP) bounds the privacy leakage of a mechanism against worst-case membership inference, but the precise tradeoff between complex adversarial models and DP protections remains poorly understood. In this paper, we present a unified framework that generalizes the patchwork of existing bounds across membership inference, attribute inference, and data reconstruction attacks. 
+</p>
+</div>
+            
 </td>
 </tr>
 
@@ -329,7 +390,7 @@ Break
 </td>
 <td></td>
 <td>
-Panel Discussion: DP and Health
+Panel Discussion: DP for Healthcare
 </td>
 </tr>
 
